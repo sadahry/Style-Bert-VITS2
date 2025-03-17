@@ -1,6 +1,6 @@
 **利用の際は必ず[お願いとデフォルトモデルの利用規約](/docs/TERMS_OF_USE.md)をお読みください。**
 
-# How to Use on Google Cloud VM
+# How to Use on UV
 
 See [CLI.md](./docs/CLI.md)
 
