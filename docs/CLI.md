@@ -38,7 +38,7 @@ Optional:
 ### 1.2. Transcribe audio files
 
 ```bash
-uv run transcribe.py --model_name <model_name>
+uv run transcribe.py --model_name <model_name> --use_hf_whisper
 ```
 Required:
 - `model_name`: Name of the speaker (to be used as the name of the trained model).
