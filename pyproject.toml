@@ -7,7 +7,7 @@ name = "style-bert-vits2"
 dynamic = ["version"]
 description = "Style-Bert-VITS2: Bert-VITS2 with more controllable voice styles."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = "~=3.11"
 license = "AGPL-3.0"
 keywords = []
 authors = [
@@ -15,9 +15,6 @@ authors = [
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: Implementation :: CPython",
 ]
@@ -25,18 +22,33 @@ dependencies = [
     "cmudict",
     "cn2an",
     "g2p_en",
+    "ipykernel>=6.29.5",
     "jieba",
     "loguru",
     "num2words",
     "numba",
-    "numpy",
+    "numpy<2",
     "pydantic>=2.0",
     "pyopenjtalk-dict",
     "pypinyin",
     "pyworld-prebuilt",
     "safetensors",
-    "torch>=2.1",
+    "scipy>=1.13.1",
+    "setuptools==76.0.0",
+    "soundfile>=0.13.1",
+    "torch<2.4",
     "transformers",
+    "gputil>=1.4.0",
+    "gradio>=4.44.1",
+    "torchaudio<2.4",
+    "onnxruntime>=1.20.1",
+    "faster-whisper>=1.1.1",
+    "librosa==0.9.2",
+    "pyloudnorm>=0.1.1",
+    "pyannote-audio>=3.3.2",
+    "stable-ts>=2.18.3",
+    "tensorboard>=2.19.0",
+    "umap-learn>=0.5.7",
 ]
 
 [project.urls]
@@ -91,7 +103,7 @@ fmt = [
 ]
 
 [[tool.hatch.envs.test.matrix]]
-python = ["3.9", "3.10", "3.11"]
+python = ["3.11"]
 
 [tool.coverage.run]
 source_pkgs = ["style_bert_vits2", "tests"]
